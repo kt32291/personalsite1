@@ -1,0 +1,205 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+.main {
+  font-size: 16px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: Courier New;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+a {
+  color: #800000;
+}
+
+p {
+  margin-bottom: 1.1em;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: .8em;
+}
+
+.wrap {
+  background: white;
+}
+
+.content {
+  height: 100%;
+  padding: 20px 0;
+  font-size: 0;
+}
+
+.main {
+  width: 633.33333px;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.clear {
+  content: "";
+  height: 300px;
+}
+
+#typed-cursor {
+  display: none;
+}
+
+.element {
+  font-size: 32pt;
+  padding-top: 50px;
+}
+
+.stuff {
+  text-align: center;
+  position: relative;
+  display: none;
+  height: 1200px;
+}
+.stuff .logo {
+  position: relative;
+  text-align: left;
+  width: 160px;
+  margin-bottom: 25px;
+}
+.stuff h1 {
+  font-size: 20pt;
+  font-weight: normal;
+}
+.stuff .polaroid {
+  text-align: center;
+  display: inline-block;
+  background: url("/img/crossword.png");
+  box-shadow: 2px 2px 5px 2px lightgray;
+}
+.stuff .polaroid div {
+  padding: 15px 15px 40px 15px;
+}
+.stuff .polaroid div img {
+  border: 2px solid lightgray;
+  width: 400px;
+}
+.stuff p {
+  font-size: 16pt;
+  font-family: 'League Script', cursive;
+  margin-top: 20px;
+}
+
+.content {
+  position: relative;
+  text-align: center;
+}
+.content i {
+  position: fixed;
+  width: 10%;
+  display: block;
+  font-size: 36pt;
+  bottom: 4%;
+  left: 45%;
+  color: black;
+}
+.content i.fa-angle-double-down {
+  display: none;
+}
+.content i.fa-angle-double-up {
+  display: none;
+  color: gray;
+}
+.content .slide_logo {
+  position: fixed;
+  width: 200px;
+  left: -200px;
+  margin-top: 35px;
+}
+
+.main_page {
+  display: none;
+  height: 800px;
+  position: relative;
+}
+.main_page .details {
+  width: 400px;
+  float: right;
+  text-align: right;
+  padding-top: 100px;
+}
+.main_page .details h2 {
+  font-family: 'League Script', cursive;
+  margin-top: 40px;
+  font-size: 24pt;
+}
+.main_page .details p {
+  margin-top: 20px;
+  font-size: 12pt;
+}

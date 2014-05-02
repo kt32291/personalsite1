@@ -1,0 +1,166 @@
+@import "library";
+@import "reset";
+
+// Global templates
+
+%group {
+    &:after {
+        display: table;
+        clear: both;
+        content: "";
+    }
+}
+
+%container {
+    margin: 0 auto;
+    max-width: $wrap_width;
+    padding: 0 $gutter_width;
+}
+
+%content {
+    font-size: 16px;
+}
+
+// Global tags
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: Courier New;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+a {
+    color: #800000;
+}
+
+p {
+    margin-bottom: 1.1em;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: .8em;
+}
+
+// Everything else
+
+.wrap {
+    @extend %container;
+    background:white;
+}
+
+.content {
+    height: 100%;
+    padding: 20px 0;
+    font-size: 0;
+}
+
+.main {
+    @extend %content;
+    @include columnify(8);
+}
+
+.clear {
+  content: "";
+  height: 300px;
+}
+
+#typed-cursor{
+  display: none;
+}
+
+.element {
+  font-size: 32pt;
+  padding-top: 50px;
+}
+
+.stuff {
+  text-align: center;
+  position: relative;
+  display: none;
+  height: 1200px;
+  .logo {
+    position: relative;
+    text-align: left;
+    width: 160px;
+    margin-bottom: 25px;
+  }
+  h1 {
+    font-size: 20pt;
+    font-weight: normal;
+  }
+  .polaroid {
+    text-align: center;
+    display: inline-block;
+    background: url('/img/crossword.png');
+    box-shadow: 2px 2px 5px 2px lightgray;
+    div {
+        padding: 15px 15px 40px 15px;
+        img {
+            border: 2px solid lightgray;
+            width: 400px;
+        }
+    }
+  }
+  p {
+    font-size: 16pt;
+    font-family: 'League Script', cursive;
+    margin-top: 20px;
+  }
+}
+
+.content {
+    position: relative;
+    text-align: center;
+    i {
+        position: fixed;
+        width: 10%;
+        display: block;
+        font-size: 36pt;
+        bottom: 4%;
+        left: 45%;
+        color: black;
+        &.fa-angle-double-down {
+            display: none;
+        }
+        &.fa-angle-double-up {
+            display: none;
+            color: gray;
+        }
+    }
+    .slide_logo {
+        position: fixed;
+        width: 200px;
+        left: -200px;
+        margin-top: 35px;
+    }
+}
+
+.main_page {
+    display: none;
+    height: 800px;
+    position: relative;
+    .details {
+        width: 400px;
+        float: right;
+        text-align: right;
+        padding-top: 100px;
+        h2 {
+            font-family: 'League Script', cursive;
+            margin-top: 40px;
+            font-size: 24pt;
+        }
+        p {
+            margin-top: 20px;
+            font-size: 12pt;
+        }
+    }
+}
+
+
