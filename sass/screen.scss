@@ -35,7 +35,11 @@ body {
 }
 
 a {
-    color: #800000;
+    color: black;
+    text-decoration: none;
+    &:hover {
+        color: gray;
+    }
 }
 
 p {
@@ -51,7 +55,7 @@ h1 {
 // Everything else
 
 .wrap {
-    @extend %container;
+    // @extend %container;
     background:white;
 }
 
@@ -79,6 +83,20 @@ h1 {
   font-size: 32pt;
   padding-top: 50px;
   line-height: 50px;
+  max-width: 960px;
+  margin: 0px auto;
+}
+
+.author {
+    font-size: 12pt;
+    margin-top: 30px;
+    font-family: Helvetica;
+    font-weight: lighter;
+    display: none;
+    letter-spacing: 3px;
+    span {
+        text-decoration: underline;
+    }
 }
 
 .stuff {
@@ -178,12 +196,16 @@ h1 {
         li {
             font-size: 16pt;
             padding: 8px 0px;
+            a {
+                font-size: 16pt;
+            }
         }
     }
 }
 
 .main_page {
     display: none;
+    margin-right: 150px;
     height: 800px;
     position: relative;
     .details {

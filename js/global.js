@@ -10,21 +10,24 @@ $(function () {
     $('.element').typed({
       strings: ["Inspiration is a now thing.", "If it grabs you, grab it right back and put it to work."],
       typeSpeed: 20,
+      backDelay: 1000,
       callback: function() {
-        $('.element').delay( 1500 ).fadeOut("slow");
-        $('.clear').delay( 1500 ).fadeOut("slow");
-        $('.stuff').delay( 2300 ).fadeIn("slow");
-        $('.fa-angle-double-down').delay( 2300 ).fadeIn("slow");
-        $('.main_page').delay( 2300 ).fadeIn("slow");
-        $('.slide_logo').delay( 2300 ).fadeIn("slow");
-        $('ul').delay( 2300 ).fadeIn("slow");
+        $('.author').delay( 700 ).fadeIn("slow");
+        $('.element').delay( 2800 ).fadeOut("slow");
+        $('.author').delay( 1500 ).fadeOut();
+        $('.clear').delay( 2800 ).fadeOut("slow");
+        $('.stuff').delay( 3500 ).fadeIn("slow");
+        $('.fa-angle-double-down').delay( 3500 ).fadeIn("slow");
+        $('.main_page').delay( 3500 ).fadeIn("slow");
+        $('.slide_logo').delay( 3500 ).fadeIn("slow");
+        $('ul').delay( 3500 ).fadeIn("slow");
       }
     });
 
     var arrow = $('i.fa-angle-double-down');
      function runIt() {
        arrow.animate({opacity:'1'}, 800);
-       arrow.animate({opacity:'0.2'}, 800, runIt);
+       arrow.animate({opacity:'0.1'}, 800, runIt);
     }
     runIt();
 
