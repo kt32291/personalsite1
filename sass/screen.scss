@@ -186,18 +186,24 @@ h1 {
             letter-spacing: 10.3px;
         }
     }
-    ul {
+    .slide_nav {
         position: fixed;
         width: 200px;
         left: -500px;
+        font-size: 16pt;
         margin-top: 450px;
         text-align: left;
         font-family: 'League Script', cursive;
-        li {
-            font-size: 16pt;
-            padding: 8px 0px;
-            a {
+        ul {
+            position: relative;
+            li {
                 font-size: 16pt;
+                padding: 8px 0px;
+                position: relative;
+                z-index: 100;
+                a {
+                    position: relative;
+                }
             }
         }
     }

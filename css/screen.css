@@ -222,20 +222,26 @@ h1 {
   font-size: 20pt;
   letter-spacing: 10.3px;
 }
-.content ul {
+.content .slide_nav {
   position: fixed;
   width: 200px;
   left: -500px;
+  font-size: 16pt;
   margin-top: 450px;
   text-align: left;
   font-family: 'League Script', cursive;
 }
-.content ul li {
+.content .slide_nav ul {
+  position: relative;
+}
+.content .slide_nav ul li {
   font-size: 16pt;
   padding: 8px 0px;
+  position: relative;
+  z-index: 100;
 }
-.content ul li a {
-  font-size: 16pt;
+.content .slide_nav ul li a {
+  position: relative;
 }
 
 .main_page {
