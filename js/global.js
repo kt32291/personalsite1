@@ -8,14 +8,16 @@ $(function () {
     // Custom JS
 
     $('.element').typed({
-      strings: ["Hello world. ^1000 My name is Katie."],
-      typeSpeed: 75,
+      strings: ["Inspiration is a now thing.", "If it grabs you, grab it right back and put it to work."],
+      typeSpeed: 20,
       callback: function() {
         $('.element').delay( 1500 ).fadeOut("slow");
         $('.clear').delay( 1500 ).fadeOut("slow");
         $('.stuff').delay( 2300 ).fadeIn("slow");
         $('.fa-angle-double-down').delay( 2300 ).fadeIn("slow");
         $('.main_page').delay( 2300 ).fadeIn("slow");
+        $('.slide_logo').delay( 2300 ).fadeIn("slow");
+        $('ul').delay( 2300 ).fadeIn("slow");
       }
     });
 
@@ -36,7 +38,7 @@ $(function () {
 
     $('i.fa-angle-double-up').click(function() {
       $('html, body').animate({
-        scrollTop: $('body').offset().top
+        scrollTop: $('html').offset().top
       }, 1500);
       // $(this).fadeOut("slow");
       // $(this).prev().fadeIn("slow");
@@ -47,12 +49,10 @@ $(function () {
 
     $(window).scroll(function() {
       if (mainTop < $(window).scrollTop()) {
-        $('i.fa-angle-double-down').hide();
-        $('i.fa-angle-double-up').fadeIn("slow");
+        $('i.fa-angle-double-down').fadeOut();
       }
       else {
-        $('i.fa-angle-double-up').hide();
-        $('i.fa-angle-double-down').fadeIn("slow");
+        $('i.fa-angle-double-down').fadeIn();
       }
 
     });

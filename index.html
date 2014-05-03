@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="/css/screen.css" media="all">
-    <link href='http://fonts.googleapis.com/css?family=League+Script|Special+Elite' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=League+Script|Special+Elite|Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <script src="/js/jquery.min.js"></script>
     <script src="/js/html5shiv.js"></script>
@@ -16,7 +16,13 @@
 
 <div class="wrap">
     <div class="content">
-        <img src="/img/logo.png" class="slide_logo" data-800="left:-200px;" data-1200="left:150px;">
+        <img src="/img/logo.png" class="slide_logo" data-800="left:-700px;" data-1200="left:150px;">
+        <h1 class="slide_name" data-800="left:-600px;" data-1200="left:150px;">Katharine<br/><span>Astrauskas</span></h1>
+        <ul data-800="left:-500px;" data-1200="left:150px;">
+            <li><i class="fa fa-github-alt"></i> Github</li>
+            <li><i class="fa fa-twitter"></i> Twitter</li>
+            <li><i class="fa fa-envelope"></i> Contact</li>
+        </ul>
         <div class="clear"></div>
         <span class="element"></span>
         <div class="stuff">
@@ -25,6 +31,15 @@
             <p>web development + design</p>
             <div class="polaroid">
                 <div><img src="/img/polaroid1.png"></div>
+                <p>Walden Pond, 2010</p>
+            </div>
+            <div class="polaroid">
+                <div><img src="/img/polaroid2.png"></div>
+                <p>Mount Kisko, 2012</p>
+            </div>
+            <div class="polaroid">
+                <div><img src="/img/polaroid3.png"></div>
+                <p>Beford, 2013</p>
             </div>
         </div>
 
@@ -46,7 +61,7 @@
 
 <script type="text/javascript" src="/js/skrollr.min.js"></script>
 <script type="text/javascript">
-    var s = skrollr.init();
+    var s = skrollr.init({forceHeight: false});
 </script>
 </body>
 </html>

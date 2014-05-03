@@ -119,6 +119,7 @@ h1 {
 .element {
   font-size: 32pt;
   padding-top: 50px;
+  line-height: 50px;
 }
 
 .stuff {
@@ -140,27 +141,39 @@ h1 {
 .stuff .polaroid {
   text-align: center;
   display: inline-block;
+  position: relative;
   background: url("/img/crossword.png");
   box-shadow: 2px 2px 5px 2px lightgray;
+  margin: 35px 20px;
 }
 .stuff .polaroid div {
-  padding: 15px 15px 40px 15px;
+  padding: 10px 10px 30px 10px;
 }
 .stuff .polaroid div img {
   border: 2px solid lightgray;
-  width: 400px;
+  width: 250px;
+}
+.stuff .polaroid p {
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 10pt;
+  position: absolute;
+  left: 15px;
+  top: 245px;
+  color: gray;
 }
 .stuff p {
-  font-size: 16pt;
-  font-family: 'League Script', cursive;
+  font-size: 11pt;
+  font-family: Helvetica;
+  font-weight: lighter;
   margin-top: 20px;
+  letter-spacing: 3px;
 }
 
 .content {
   position: relative;
   text-align: center;
 }
-.content i {
+.content i.fa-angle-double-down, .content i.fa-angle-double-up {
   position: fixed;
   width: 10%;
   display: block;
@@ -169,18 +182,45 @@ h1 {
   left: 45%;
   color: black;
 }
-.content i.fa-angle-double-down {
+.content i.fa-angle-double-down.fa-angle-double-down, .content i.fa-angle-double-up.fa-angle-double-down {
   display: none;
 }
-.content i.fa-angle-double-up {
+.content i.fa-angle-double-down.fa-angle-double-up, .content i.fa-angle-double-up.fa-angle-double-up {
   display: none;
   color: gray;
 }
 .content .slide_logo {
   position: fixed;
-  width: 200px;
-  left: -200px;
+  width: 250px;
+  left: -700px;
   margin-top: 35px;
+}
+.content .slide_name {
+  position: fixed;
+  left: -600px;
+  font-size: 26pt;
+  margin-top: 320px;
+  font-family: Courier New;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 8px;
+  text-align: left;
+}
+.content .slide_name span {
+  font-size: 20pt;
+  letter-spacing: 10.3px;
+}
+.content ul {
+  position: fixed;
+  width: 200px;
+  left: -500px;
+  margin-top: 450px;
+  text-align: left;
+  font-family: 'League Script', cursive;
+}
+.content ul li {
+  font-size: 16pt;
+  padding: 8px 0px;
 }
 
 .main_page {
