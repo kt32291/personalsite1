@@ -38,7 +38,7 @@ a {
     color: black;
     text-decoration: none;
     &:hover {
-        color: gray;
+        color: slategray;
     }
 }
 
@@ -157,6 +157,7 @@ h1 {
         bottom: 4%;
         left: 45%;
         color: black;
+        cursor: pointer;
         &.fa-angle-double-down {
             display: none;
         }
@@ -186,27 +187,6 @@ h1 {
             letter-spacing: 10.3px;
         }
     }
-    .slide_nav {
-        position: fixed;
-        width: 200px;
-        left: -500px;
-        font-size: 16pt;
-        margin-top: 450px;
-        text-align: left;
-        font-family: 'League Script', cursive;
-        ul {
-            position: relative;
-            li {
-                font-size: 16pt;
-                padding: 8px 0px;
-                position: relative;
-                z-index: 100;
-                a {
-                    position: relative;
-                }
-            }
-        }
-    }
 }
 
 .main_page {
@@ -214,6 +194,45 @@ h1 {
     margin-right: 150px;
     height: 800px;
     position: relative;
+    .slide_nav {
+        float: left;
+        font-size: 16pt;
+        margin-top: 425px;
+        margin-left: 150px;
+        text-align: left;
+        font-family: 'League Script', cursive;
+        li {
+            font-size: 16pt;
+            padding: 8px 0px;
+            position: relative;
+            .contact {
+                cursor: pointer;
+                &:hover {
+                    color: slategray;
+                }
+            }
+            div {
+                display: none;
+                img {
+                    display: inline-block;
+                    height: 100px;
+                    border-radius: 60px;
+                    margin-left: 15px;
+                    margin-top: 15px;
+                }
+                ul {
+                    display: inline-block;
+                    vertical-align: top;
+                    margin-top: 25px;
+                    li {
+                        font-family: Courier New;
+                        font-size: 13pt;
+                        padding: 0px;
+                    }
+                }
+            }
+        }
+    }
     .details {
         width: 400px;
         float: right;

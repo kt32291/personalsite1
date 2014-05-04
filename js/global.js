@@ -20,7 +20,6 @@ $(function () {
         $('.fa-angle-double-down').delay( 3500 ).fadeIn("slow");
         $('.main_page').delay( 3500 ).fadeIn("slow");
         $('.slide_logo').delay( 3500 ).fadeIn("slow");
-        $('ul').delay( 3500 ).fadeIn("slow");
       }
     });
 
@@ -58,6 +57,10 @@ $(function () {
         $('i.fa-angle-double-down').fadeIn();
       }
 
+    });
+
+    $('.contact').click(function() {
+      $('.slide_nav li div').fadeToggle();
     });
 
 
